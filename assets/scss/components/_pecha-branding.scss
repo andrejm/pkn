@@ -1,0 +1,9 @@
+.pecha-branding {
+	background-color: $black;
+	display: flex;
+	flex-flow: row nowrap;
+
+	&__logo {
+		fill: $white;
+	}
+}

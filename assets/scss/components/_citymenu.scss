@@ -1,0 +1,9 @@
+.citymenu {
+	display: flex;
+	flex-flow: row nowrap;
+	@include reset-list();
+
+	&__href {
+		color: $white;
+	}
+}
