@@ -1,0 +1,33 @@
+.entry-header {
+	text-align: center;
+	margin-bottom: rem-calc(50);
+}
+
+.entry-title {
+	margin-bottom: 0;
+}
+
+.entry-content {
+	text-align: center;
+	p {
+		font-size: rem-calc(18);
+	}
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	@include breakpoint(medium) {
+		max-width: rem-calc(600);
+		margin: 0 auto;
+	}
+}
+
+.entry-meta {
+	font-size: rem-calc(11);
+	color: $dark-gray;
+}

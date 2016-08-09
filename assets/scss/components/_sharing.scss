@@ -1,0 +1,13 @@
+.sharing {
+	@include reset-list();
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+
+	}
+
+	&__href {
+
+	}
+}

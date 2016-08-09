@@ -5,6 +5,16 @@
 
 {% block page %}
 
-<h1>Hello world. This is me.</h1>
+	<div class="news-archive">
+		<div class="news-archive__list">
+			zoznam clankov			
+		</div>
+		<div class="news-archive__main">
+			{% include '_article.twig' with {'article_title' : 'PechaKucha slávi jubileum'} %}
+			{% include '_article.twig' with {'article_title' : 'PechaKucha slávi jubileum'} %}
+			{% include '_article.twig' with {'article_title' : 'PechaKucha slávi jubileum'} %}
+		</div>
+	</div>
+
 
 {% endblock %}
