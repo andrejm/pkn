@@ -1,0 +1,15 @@
+.footer {
+	background-color: $white;
+
+	&__inner {
+		@include grid-column-row();
+		display: flex;
+		justify-content: space-between;
+	}
+
+	p {
+		margin-bottom: 0;
+		height: $menubar-height;
+		line-height: $menubar-height;
+	}
+}

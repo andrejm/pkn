@@ -1,0 +1,22 @@
+.icon {
+	fill: $black;
+	
+	&--social-facebook {
+		height: rem-calc(20);
+		width: rem-calc(20);
+	}
+
+	&--social-youtube {
+		height: rem-calc(20);
+		width: rem-calc(20);
+	}
+
+	&--search {
+		height: rem-calc(20);
+		width: rem-calc(20);	
+	}
+
+	&--logo {
+		height: rem-calc(100);
+	}
+}

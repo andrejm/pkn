@@ -6,3 +6,12 @@
     - E.g. margin on a button or a text
     - have prefix pr-u-
    ========================================================================== */
+
+.screen-reader-text {
+	//from https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/
+	clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}

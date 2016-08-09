@@ -1,0 +1,11 @@
+.search-form {
+	display: flex;
+	
+	&__query {
+		max-width: rem-calc(140);
+		height: $menubar-height;
+		border: 0;
+		box-shadow: none;
+		border-bottom: 2px solid $black;
+	}
+}

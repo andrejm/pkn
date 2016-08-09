@@ -60,7 +60,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $white;
+$body-background: #fafafa;
 $body-font-color: $black;
 $body-font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -74,6 +74,12 @@ $global-flexbox: false;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
+
+// Site-specific variables
+// ---------
+$citymenu-height: rem-calc(30);
+$menubar-height: rem-calc(50);
+$menubar-font-size: rem-calc(13);
 
 // 2. Breakpoints
 // --------------
@@ -139,8 +145,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $black;
+$anchor-color-hover: $primary-color;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

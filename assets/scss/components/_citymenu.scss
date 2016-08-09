@@ -2,8 +2,16 @@
 	display: flex;
 	flex-flow: row nowrap;
 	@include reset-list();
+	font-size: rem-calc(11);
+
+	&__item.active {
+		font-weight: bold;
+	}
 
 	&__href {
 		color: $white;
+		height: $citymenu-height;
+		line-height: $citymenu-height;
+		padding: 0 rem-calc(10);
 	}
 }

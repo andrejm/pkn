@@ -2,8 +2,11 @@
 	background-color: $black;
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: space-between;
 
 	&__logo {
 		fill: $white;
+		height: $citymenu-height;
+		width: rem-calc(170); //because
 	}
 }

@@ -1,0 +1,16 @@
+.menu {
+	@include reset-list();
+	display: flex;
+}
+
+.menu-item {
+	font-size: $menubar-font-size;
+}
+
+.menu-item a {
+	@include breakpoint(medium) {
+		height: $menubar-height;
+		line-height: $menubar-height;
+		padding: 0 10px;
+	}
+}

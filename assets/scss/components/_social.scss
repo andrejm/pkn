@@ -1,0 +1,19 @@
+.social {
+	@include reset-list();
+	display: flex;
+
+	&__item {
+
+	}
+
+	&__href {
+		line-height: $menubar-height;
+		height: $menubar-height;
+		font-size: $menubar-font-size;
+		padding: 0 rem-calc(10);
+
+		.social__item:first-child & {
+			padding-left: 0;
+		}
+	}
+}

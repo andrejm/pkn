@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ title }} | Pecha Kucha Nights Bratislava</title>
+        <title>Partneri | Pecha Kucha Nights Bratislava</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        {# <link rel="stylesheet" href="css/normalize.css"> #}
+        
         <link rel="stylesheet" href="dist/css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -18,7 +18,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="hero" style="display:{{ hero_display }};">
+        <div class="hero" style="display:none;">
             <img src="images/tmp/hero_image.jpg" alt="">
         </div>
         <div class="pecha-branding">
@@ -37,7 +37,25 @@
 
         <header class="header">
             <div class="header__inner">
-                {% include '_social.twig' %}
+                                <ul class="social">
+                    <li class="social__item">
+                        <a href="" class="social__href">
+                            <svg class="icon icon--social-facebook">
+                                <use xlink:href="dist/svg/svg.svg#social-facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__href">
+                            <svg class="icon icon--social-facebook">
+                                <use xlink:href="dist/svg/svg.svg#social-youtube" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__href">Newsletter</a>
+                    </li>
+                </ul>
 
                 <nav>
                     <ul class="menu">
@@ -77,3 +95,41 @@
         <div id="page" class="site">
             
         
+
+
+
+<h1>Hello world. This is me.</h1>
+
+
+
+		</div> <!-- .site -->
+		
+		<footer class="footer">
+			<div class="footer__inner">
+				<p><a href="http://punkt.sk">PUNKT</a> | Pecha Kucha Nights &copy; 2008 — 2016</p>
+				                <ul class="social">
+                    <li class="social__item">
+                        <a href="" class="social__href">
+                            <svg class="icon icon--social-facebook">
+                                <use xlink:href="dist/svg/svg.svg#social-facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__href">
+                            <svg class="icon icon--social-facebook">
+                                <use xlink:href="dist/svg/svg.svg#social-youtube" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__href">Newsletter</a>
+                    </li>
+                </ul>
+			</div>
+		</footer>
+
+        <script src="dist/js/main.js"></script>
+        <script src="dist/js/svg4everybody.min.js"></script>
+    </body>
+</html>

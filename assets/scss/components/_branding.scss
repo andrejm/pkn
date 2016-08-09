@@ -1,0 +1,9 @@
+.branding {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include breakpoint(medium) {
+		min-height: rem-calc(400);
+	}
+}
