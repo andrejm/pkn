@@ -1,0 +1,17 @@
+.detail-nav {
+	@include grid-column-row();
+
+	&:after {
+		display: none;
+	}
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	font-size: rem-calc(11);
+	margin-bottom: $common-spacing;
+
+	&__menu {
+		@include reset-list();
+	}
+}

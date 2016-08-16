@@ -1,0 +1,32 @@
+.volume-info {
+
+	&__img {
+		margin-bottom: $common-spacing;
+	}
+
+	&__title {
+		@include pkn-beta();
+	}
+
+	&__subtitle {
+		@include pkn-gamma();
+		margin-bottom: $common-spacing;
+	}
+
+	&__title, &__subtitle {
+		font-weight: bold;
+		max-width: rem-calc(200);
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__facts {
+		margin: $common-spacing 0;
+	}
+
+	&__description {
+		margin-bottom: $common-spacing;
+		@include pkn-base();
+		text-align: center;
+	}
+}

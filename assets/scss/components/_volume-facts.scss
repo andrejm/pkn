@@ -1,0 +1,20 @@
+.volume-facts {
+	border: none;
+	width: 100%;
+	@include pkn-base();
+
+	&__row {
+		border-top: 1px solid $pkn-border-color;
+	}
+
+	&__label, &__text {
+		padding: 10px 0;
+		vertical-align: top;
+	}
+
+	&__label {
+		text-transform: uppercase;
+		font-weight: bold;
+		min-width: 70px;
+	}
+}

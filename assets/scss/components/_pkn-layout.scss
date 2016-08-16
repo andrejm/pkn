@@ -1,0 +1,37 @@
+.pkn-layout {
+	@include flex-grid-row();
+
+	&--videogallery {
+		.pkn-layout__title {
+			text-transform: uppercase;
+		}
+	}
+
+	&__sidebar {
+		@include flex-grid-column(12);
+
+		&--gallery {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: stretch;
+		}
+
+		@include breakpoint(large) {
+			@include flex-grid-column(4);
+			border-right: 1px solid $pkn-border-color;
+
+			&--gallery {
+				border-right-color: $pkn-border-color-dark;
+			}
+		}
+	}
+
+	&__main {
+		@include flex-grid-column(12);
+
+		@include breakpoint(large) {
+			@include flex-grid-column(8);
+
+		}
+	}
+}

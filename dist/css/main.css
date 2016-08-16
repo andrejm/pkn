@@ -498,8 +498,8 @@ button {
 
 @media screen and (min-width: 40em) {
   .row .row {
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
   }
 }
 
@@ -522,8 +522,8 @@ button {
 
 @media screen and (min-width: 40em) {
   .column, .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -1007,8 +1007,8 @@ button {
     padding-right: 0;
   }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -1232,8 +1232,8 @@ button {
     padding-right: 0;
   }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -2420,7 +2420,7 @@ To maintain vertical rhythm we need two key ingredients; consistent line heights
 - styles are targeted via element selector and class. You don't need to explicitly specify class and styles are applied. You also have an option to use semantic headings and change their look easily with a class. Structure and looks are independant.
 - in some cases you will need some deviation from this default settings. In such cases make your own class and override styles or you utility class (if you only need to remove margin from one instance etc.).
 ========================================================================== */
-h1, .pr-alpha {
+h1, .pkn-alpha {
   font-size: 2.5rem;
   line-height: 1.15;
   padding: 0;
@@ -2430,9 +2430,9 @@ h1, .pr-alpha {
   margin-bottom: 2.5rem;
 }
 
-h2, .pr-beta {
+h2, .pkn-beta {
   font-size: 1.125rem;
-  line-height: 1.24;
+  line-height: 1.2;
   padding: 0;
   font-weight: bold;
   color: #000;
@@ -2440,13 +2440,13 @@ h2, .pr-beta {
   margin-bottom: 1.875rem;
 }
 
-h2 + h3, h2 .pr-gamma, .pr-beta + h3, .pr-beta .pr-gamma {
+h2 + h3, h2 .pkn-gamma, .pkn-beta + h3, .pkn-beta .pkn-gamma {
   margin-top: -10px;
 }
 
-h3, .pr-gamma {
-  font-size: 1.25rem;
-  line-height: 28/20;
+h3, .pkn-gamma {
+  font-size: 0.8125rem;
+  line-height: 1.2;
   margin-top: 0;
   padding: 0;
   font-weight: bold;
@@ -2473,6 +2473,30 @@ b {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.u-pkn-layout-wrapper--dark {
+  background-color: #0a0a0a;
+  color: #fefefe;
+}
+
+.u-flex-video {
+  position: relative;
+  height: 0;
+  padding-bottom: 75%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.u-flex-video iframe,
+.u-flex-video object,
+.u-flex-video embed,
+.u-flex-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .branding {
@@ -2510,6 +2534,55 @@ b {
   height: 1.875rem;
   line-height: 1.875rem;
   padding: 0 0.625rem;
+}
+
+.detail-nav {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-size: 0.6875rem;
+  margin-bottom: 1.875rem;
+}
+
+.detail-nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 40em) {
+  .detail-nav {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.detail-nav:last-child:not(:first-child) {
+  float: right;
+}
+
+.detail-nav, .detail-nav:last-child {
+  float: none;
+}
+
+.detail-nav:after {
+  display: none;
+}
+
+.detail-nav__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .entry-header {
@@ -2575,8 +2648,8 @@ b {
 
 @media screen and (min-width: 40em) {
   .footer__inner {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -2592,6 +2665,40 @@ b {
   margin-bottom: 0;
   height: 3.125rem;
   line-height: 3.125rem;
+}
+
+.gallery {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.gallery > .gallery-item {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.gallery-item {
+  margin: 0;
+  padding: 0 10px 20px;
+}
+
+.gallery-item:nth-child(2n+1) {
+  padding-left: 0;
+}
+
+.gallery-item:nth-child(2n) {
+  padding-right: 0;
+}
+
+.gallery-remaining {
+  text-align: center;
 }
 
 .header {
@@ -2622,8 +2729,8 @@ b {
 
 @media screen and (min-width: 40em) {
   .header__inner {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -2663,6 +2770,8 @@ b {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   text-align: center;
 }
 
@@ -2696,6 +2805,18 @@ b {
   }
 }
 
+@media screen and (min-width: 64em) {
+  .items-grid--speakers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .items-grid--speakers > .items-grid__item {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
 .items-grid__item {
   display: block;
   padding: 0 20px 10px;
@@ -2703,6 +2824,11 @@ b {
 
 .items-grid__item .items-grid__img {
   transition: box-shadow 0.2s;
+}
+
+.items-grid--speakers .items-grid__item .items-grid__img {
+  border: 1px solid #fefefe;
+  border-radius: 50%;
 }
 
 .items-grid__item:hover .items-grid__img {
@@ -2751,52 +2877,40 @@ b {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-.news-archive:after {
-  content: "";
-  display: table;
-  clear: both;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
 }
 
 .news-archive__list {
-  width: 16.66667%;
-  float: left;
+  -ms-flex: 0 0 16.66667%;
+      flex: 0 0 16.66667%;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+  max-width: 16.66667%;
 }
 
 @media screen and (min-width: 40em) {
   .news-archive__list {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
-.news-archive__list:last-child:not(:first-child) {
-  float: right;
-}
-
 .news-archive__main {
-  width: 66.66667%;
-  float: left;
+  -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+  max-width: 66.66667%;
 }
 
 @media screen and (min-width: 40em) {
   .news-archive__main {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
-}
-
-.news-archive__main:last-child:not(:first-child) {
-  float: right;
-}
-
-.news-archive__main:last-child:last-child {
-  float: left;
 }
 
 .pecha-branding {
@@ -2813,6 +2927,100 @@ b {
   fill: #fefefe;
   height: 1.875rem;
   width: 10.625rem;
+}
+
+.pkn-layout {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.pkn-layout--videogallery .pkn-layout__title {
+  text-transform: uppercase;
+}
+
+.pkn-layout__sidebar {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .pkn-layout__sidebar {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.pkn-layout__sidebar--gallery {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+}
+
+@media screen and (min-width: 64em) {
+  .pkn-layout__sidebar {
+    -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    max-width: 33.33333%;
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+@media screen and (min-width: 64em) and (min-width: 40em) {
+  .pkn-layout__sidebar {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .pkn-layout__sidebar--gallery {
+    border-right-color: #1a1a1a;
+  }
+}
+
+.pkn-layout__main {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .pkn-layout__main {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .pkn-layout__main {
+    -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    max-width: 66.66667%;
+  }
+}
+
+@media screen and (min-width: 64em) and (min-width: 40em) {
+  .pkn-layout__main {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .search-form {
@@ -2843,31 +3051,10 @@ b {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  float: left;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
-.site:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (min-width: 40em) {
-  .site {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-.site:last-child:not(:first-child) {
-  float: right;
-}
-
-.site, .site:last-child {
-  float: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
 }
 
 .social {
@@ -2887,6 +3074,61 @@ b {
 
 .social__item:first-child .social__href {
   padding-left: 0;
+}
+
+.volume-facts {
+  border: none;
+  width: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+}
+
+.volume-facts__row {
+  border-top: 1px solid #e5e5e5;
+}
+
+.volume-facts__label, .volume-facts__text {
+  padding: 10px 0;
+  vertical-align: top;
+}
+
+.volume-facts__label {
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 70px;
+}
+
+.volume-info__img {
+  margin-bottom: 1.875rem;
+}
+
+.volume-info__title {
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+.volume-info__subtitle {
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  margin-bottom: 1.875rem;
+}
+
+.volume-info__title, .volume-info__subtitle {
+  font-weight: bold;
+  max-width: 12.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.volume-info__facts {
+  margin: 1.875rem 0;
+}
+
+.volume-info__description {
+  margin-bottom: 1.875rem;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* ==========================================================================

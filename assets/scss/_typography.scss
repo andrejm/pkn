@@ -38,23 +38,24 @@ To maintain vertical rhythm we need two key ingredients; consistent line heights
 
 }
 
-@mixin pr-alpha {
+@mixin pkn-alpha {
     font-size: rem-calc(40);
     line-height: (46/40);   // magic number / font size
 }
 
-@mixin pr-beta {
+@mixin pkn-beta {
     font-size: rem-calc(18);
-    line-height: 1.24;
+    line-height: 1.2;
 }
 
-@mixin pr-gamma {
-    font-size: rem-calc(20);
-    line-height: 28/20;
+@mixin pkn-gamma {
+    font-size: rem-calc(13);
+    line-height: 1.2;
 }
 
-@mixin pr-base {
-    line-height: (28/16);
+@mixin pkn-base {
+    font-size: rem-calc(13);
+    line-height: 1.2;
 }
 
 
@@ -64,8 +65,8 @@ To maintain vertical rhythm we need two key ingredients; consistent line heights
 - in some cases you will need some deviation from this default settings. In such cases make your own class and override styles or you utility class (if you only need to remove margin from one instance etc.).
 ========================================================================== */
 
-h1, .pr-alpha {
-    @include pr-alpha;
+h1, .pkn-alpha {
+    @include pkn-alpha;
     padding: 0;
     font-weight: bold;
     color: #000;
@@ -73,20 +74,20 @@ h1, .pr-alpha {
     margin-bottom: rem-calc(40);
 }
 
-h2, .pr-beta {
-    @include pr-beta;
+h2, .pkn-beta {
+    @include pkn-beta;
     padding: 0;
     font-weight: bold;
     color: #000;
     margin-top: rem-calc(60);
     margin-bottom: rem-calc(30);
-    + h3, .pr-gamma {
+    + h3, .pkn-gamma {
         margin-top: -10px;
     }
 }
 
-h3, .pr-gamma {
-    @include pr-gamma;
+h3, .pkn-gamma {
+    @include pkn-gamma;
     margin-top: 0;
     padding: 0;
     font-weight: bold;

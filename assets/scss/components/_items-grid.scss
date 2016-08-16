@@ -2,6 +2,7 @@
 	display: flex;
 	@include flex-grid-layout(2, '.items-grid__item');
 
+	justify-content: center;
 	text-align: center;
 	
 	@include breakpoint(medium) {
@@ -12,6 +13,12 @@
 		@include flex-grid-layout(5, '.items-grid__item');
 	}
 
+	&--speakers {
+		@include breakpoint(large) {
+			@include flex-grid-layout(4, '.items-grid__item');
+		}
+	}
+
 	&__item {
 		display: block;
 		padding: 0 20px 10px;
@@ -20,6 +27,11 @@
 	&__img {
 		.items-grid__item & {
 			transition: box-shadow 0.2s;
+
+			.items-grid--speakers & {
+				border: 1px solid $white;
+				border-radius: 50%;
+			}
 		}
 
 		.items-grid__item:hover & {

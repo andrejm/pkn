@@ -1,12 +1,12 @@
 .news-archive {
-	@include grid-row();
+	@include flex-grid-row();
 
 	&__list {
-		@include grid-column(2);
+		@include flex-grid-column(2);
 	}
 
 	&__main {
-		@include grid-column(8);
-		@include grid-column-end;
+		@include flex-grid-column(8);
+		// @include flex-grid-column-end;
 	}
 }
