@@ -4,6 +4,6 @@
 	align-items: center;
 
 	@include breakpoint(medium) {
-		min-height: rem-calc(400);
+		min-height: rem-calc(200);
 	}
 }

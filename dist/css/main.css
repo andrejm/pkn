@@ -2403,14 +2403,14 @@ To maintain vertical rhythm we need two key ingredients; consistent line heights
 ========================================================================== */
 @font-face {
   font-family: 'Montserrat';
-  src: url("../font/montserrat-bold-webfont.woff2") format("woff2"), url("../font/montserrat-bold-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../font/montserrat-regular-webfont.woff2") format("woff2"), url("../font/montserrat-regular-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -2486,7 +2486,7 @@ b {
 
 @media screen and (min-width: 40em) {
   .branding {
-    min-height: 25rem;
+    min-height: 12.5rem;
   }
 }
 
