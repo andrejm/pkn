@@ -1,0 +1,29 @@
+.newslist {
+	@include reset-list();
+
+	display: flex;
+	flex-flow: column nowrap;
+
+	&__href {
+		padding: 10px 15px;
+		display: block;
+
+		&:hover {
+			box-shadow: $item-box-shadow;
+			color: $black;
+		}
+	}
+
+	&__posttitle {
+		@include pkn-base();
+		font-weight: bold;
+		margin-bottom: rem-calc(3);
+	}
+
+	&__postdate {
+		display: block;
+		font-size: rem-calc(11);
+		color: $dark-gray;
+		margin-top: 0;
+	}
+}
