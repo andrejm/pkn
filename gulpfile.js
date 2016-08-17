@@ -28,21 +28,22 @@ var paths = {
         
 
         'bower_components/foundation-sites/js/foundation.core.js',
-        'bower_components/foundation-sites/js/foundation.util.mediaQuery.js',
-        'bower_components/foundation-sites/js/foundation.util.keyboard.js',
-        'bower_components/foundation-sites/js/foundation.util.motion.js',
-        'bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js',
-        'bower_components/foundation-sites/js/foundation.util.touch.js',
+        // 'bower_components/foundation-sites/js/foundation.util.mediaQuery.js',
+        // 'bower_components/foundation-sites/js/foundation.util.keyboard.js',
+        // 'bower_components/foundation-sites/js/foundation.util.motion.js',
+        // 'bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js',
+        // 'bower_components/foundation-sites/js/foundation.util.touch.js',
         // 'bower_components/foundation-sites/js/foundation.toggler.js',
-        'bower_components/foundation-sites/js/foundation.responsiveMenu.js',
-        'bower_components/foundation-sites/js/foundation.responsiveToggle.js',
-        'bower_components/foundation-sites/js/foundation.orbit.js',
+        // 'bower_components/foundation-sites/js/foundation.responsiveMenu.js',
+        // 'bower_components/foundation-sites/js/foundation.responsiveToggle.js',
+        // 'bower_components/foundation-sites/js/foundation.orbit.js',
         'assets/js/components/*.js',
         'assets/js/main.js'
         ],
     copyScripts: [
         'bower_components/jquery/dist/jquery.min.js',
-        'bower_components/svg4everybody/dist/svg4everybody.min.js'
+        'bower_components/svg4everybody/dist/svg4everybody.min.js',
+        'bower_components/slick-carousel/slick/slick.min.js'
         ],
     images: ['assets/svg/*.svg'],
     fonts: [

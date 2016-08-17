@@ -1,0 +1,33 @@
+.item-person {
+	text-align: center;
+	
+	&__img {
+		.item-person & {
+			transition: box-shadow 0.2s;
+			border: 1px solid $white;
+			border-radius: 50%;
+		}
+
+		a.item-person:hover & {
+			box-shadow: $item-box-shadow;
+			transition: box-shadow 0.2s;
+		}
+	}
+
+	&__title {
+		margin-top: rem-calc(10);
+		margin-bottom: 0;
+		font-size: rem-calc(18);
+	}
+
+	&__name {
+		@include pkn-base();
+		margin-top: 0;
+		margin-bottom: rem-calc(10);
+	}
+
+	&__meta {
+		font-size: rem-calc(11);
+		color: $dark-gray;
+	}
+}

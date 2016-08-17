@@ -19,4 +19,10 @@
 	&--logo {
 		height: rem-calc(100);
 	}
+
+	&--arrow-left,
+	&--arrow-right {
+		height: rem-calc(20);
+		width: rem-calc(20);
+	}
 }

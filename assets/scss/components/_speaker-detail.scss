@@ -1,0 +1,48 @@
+.speaker-detail {
+	@include flex-grid-row();
+
+	&__profilepic {
+		@include breakpoint(medium) {
+			@include flex-grid-column(4);
+			padding-bottom: $common-spacing;
+			border-right: 1px solid $pkn-border-color;
+		}
+		display: flex;
+		align-items: center;
+	}
+
+	&__desc {
+		@include pkn-base();
+		text-align: center;
+		@include breakpoint(medium) {
+			@include flex-grid-column(4);
+			padding-bottom: $common-spacing;
+			border-right: 1px solid $pkn-border-color;
+		}
+	}
+
+	&__details {
+		@include pkn-base();
+		@include breakpoint(medium) {
+			@include flex-grid-column(4);
+			padding-bottom: $common-spacing;
+		}
+	}
+
+	&__navigation {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: 1px solid $white;
+		border-radius: 50%;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+
+
+		&:hover {
+			box-shadow: $item-box-shadow;
+
+		}
+	}
+}

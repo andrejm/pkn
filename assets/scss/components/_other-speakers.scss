@@ -1,0 +1,14 @@
+.other-speakers {
+
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__list {
+		overflow: hidden;
+	}
+
+	&__item {
+		max-width: 200px;
+	}
+}

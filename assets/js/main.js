@@ -8,5 +8,16 @@ jQuery(document).ready(function($) {
 	    polyfill: true // polyfill <use> elements for External Content
 	});
 
+	/*
+	* Slick carousel
+	*/
+
+	$('.js-other-speakers').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: false,
+	});
+
 
 });
