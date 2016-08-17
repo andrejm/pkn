@@ -21,6 +21,10 @@ $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
+//customized variables
+$slick-opacity-default: 1;
+$slick-opacity-not-active: 0;
+
 @function slick-image-url($url) {
     @if function-exists(image-url) {
         @return image-url($url);
@@ -101,7 +105,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    // left: -25px;
+    left: 45px;
+    z-index: 1;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -115,7 +121,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    // right: -25px;
+    right: 45px;
+    z-index: 1;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
@@ -191,4 +199,9 @@ $slick-opacity-not-active: 0.25 !default;
             opacity: $slick-opacity-default;
         }
     }
+}
+
+//additional
+.slick-track {
+    padding: 40px 0;
 }

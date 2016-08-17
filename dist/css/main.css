@@ -2646,7 +2646,7 @@ b {
 
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
-  opacity: 0.25;
+  opacity: 0;
 }
 
 .slick-prev:before,
@@ -2655,13 +2655,14 @@ b {
   font-size: 20px;
   line-height: 1;
   color: white;
-  opacity: 0.75;
+  opacity: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-  left: -25px;
+  left: 45px;
+  z-index: 1;
 }
 
 [dir="rtl"] .slick-prev {
@@ -2678,7 +2679,8 @@ b {
 }
 
 .slick-next {
-  right: -25px;
+  right: 45px;
+  z-index: 1;
 }
 
 [dir="rtl"] .slick-next {
@@ -2754,14 +2756,18 @@ b {
   line-height: 20px;
   text-align: center;
   color: black;
-  opacity: 0.25;
+  opacity: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
   color: black;
-  opacity: 0.75;
+  opacity: 1;
+}
+
+.slick-track {
+  padding: 40px 0;
 }
 
 .branding {
@@ -3033,6 +3039,37 @@ b {
   float: none;
 }
 
+.home-slider {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .home-slider {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.home-slider__item {
+  margin-right: 1.875rem;
+}
+
+.home-slider__href {
+  display: block;
+}
+
+.home-slider__href:hover {
+  box-shadow: 0 0 40px 3px #cacaca;
+}
+
+.home-slider__img {
+  max-width: 300px;
+}
+
 .icon {
   fill: #0a0a0a;
 }
@@ -3204,6 +3241,11 @@ a.item-person:hover .item-person__img {
 }
 
 .news-archive {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
@@ -3211,6 +3253,18 @@ a.item-person:hover .item-person__img {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+}
+
+@media screen and (min-width: 40em) {
+  .news-archive {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.news-archive--home {
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .news-archive__list {
@@ -3235,11 +3289,11 @@ a.item-person:hover .item-person__img {
 }
 
 .news-archive--home .news-archive__main {
-  -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 @media screen and (min-width: 40em) {

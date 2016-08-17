@@ -1,5 +1,11 @@
 .news-archive {
+	@include flex-grid-column(12);
 	@include flex-grid-row();
+
+	&--home {
+		@include flex-align(center);
+		
+	}
 
 	&__list {
 		@include flex-grid-column(3, 0);
@@ -10,7 +16,7 @@
 		// @include flex-grid-column-end;
 
 		.news-archive--home & {
-			@include flex-grid-column(12);
+			@include flex-grid-column(6);
 		}
 	}
 }

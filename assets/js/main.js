@@ -19,5 +19,15 @@ jQuery(document).ready(function($) {
 		infinite: false,
 	});
 
+	$('.js-home-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: false,
+		arrows: true,
+		variableWidth: true,
+		// centerMode: true
+	});
+
 
 });
