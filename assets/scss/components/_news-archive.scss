@@ -16,7 +16,7 @@
 		// @include flex-grid-column-end;
 
 		.news-archive--home & {
-			@include flex-grid-column(6);
+			@include flex-grid-column($pkn-post-width);
 		}
 	}
 }

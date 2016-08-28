@@ -5,6 +5,37 @@
 
 {% block page %}
 
-<h1>Hello world. This is me.</h1>
+	<main class="site__main">
+		<article class="entry">
+			<header class="entry__header">
+				<h1 class="entry__title">About PechaKucha</h1>
+			</header>
+			<div class="entry__content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla eius provident aliquam natus eos hic culpa cupiditate quae doloribus earum, voluptas pariatur in.
+				</p>
+				<p>
+					Sint, aliquid minus magni cum aspernatur ea, delectus soluta, fuga facilis dignissimos temporibus quasi nulla ut nam blanditiis at optio alias sapiente!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores impedit molestiae ex iure nesciunt, consectetur rem mollitia officia, illo nihil, eveniet. Suscipit illum, consequuntur tempore ut veritatis magni ipsa, assumenda.
+				</p>
+			</div>
+		</article>
+	</main>
+
+	<ul class="branding-menu">
+		<li class="branding-menu__item">
+			<a href="http://www.pechakucha.org/" class="branding-menu__href" target="_blank">
+				<svg class="icon icon--badge">
+					<use xlink:href="dist/svg/svg.svg#badge" />
+				</svg>
+			</a>
+		</li>
+		<li class="branding-menu__item">
+			<a href="kontakt.html" class="branding-menu__href--textlink">
+				Want to present? <br>
+				<strong>Get in touch!</strong>
+			</a>
+		</li>
+	</ul>
 
 {% endblock %}

@@ -1,5 +1,14 @@
 .site {
 	@include flex-grid-row();
 	@include flex-grid-column(12);
-	// @include flex-align(center); //added because of contact
+	@include flex-align(center); //added because of posts
+
+	position: relative;
+
+	&__main {
+		@include breakpoint(large) {
+			@include flex-grid-column($pkn-post-width);
+		}
+	}
+
 }

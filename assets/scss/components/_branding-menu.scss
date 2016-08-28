@@ -1,0 +1,42 @@
+.branding-menu {
+	@include reset-list();
+	flex-basis: 100%;
+	display: flex;
+	justify-content: center;
+
+
+	@include breakpoint(large) {
+		position: absolute;
+		right: 50px;
+		flex-basis: none;
+		flex-flow: column nowrap;
+	}
+
+	&__item {
+		margin-right: $common-spacing;
+
+		@include breakpoint(large) {
+			margin-right: 0;
+			margin-bottom: $common-spacing;
+		}
+	}
+
+
+	&__href {
+		&--textlink {
+			display: block;
+			width: rem-calc(100);
+			height: rem-calc(100);
+			border: 2px solid $black;
+			border-radius: 50%;
+			text-align: center;
+			padding: 10px;
+			font-size: rem-calc(11);
+
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

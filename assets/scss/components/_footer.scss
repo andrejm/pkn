@@ -1,5 +1,6 @@
 .footer {
 	background-color: $white;
+	margin-top: 75px;
 
 	&__inner {
 		@include grid-column-row();

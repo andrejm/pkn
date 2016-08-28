@@ -1,21 +1,22 @@
 .entry {
 	&:first-child {
-		.entry-title {
+		.entry__title {
 			margin-top: 0;
 		}
 	}
 }
 
-.entry-header {
+.entry__header {
 	text-align: center;
 	margin-bottom: rem-calc(50);
 }
 
-.entry-title {
+.entry__title {
 	margin-bottom: 0;
+	@include pkn-beta();
 }
 
-.entry-content {
+.entry__content {
 	text-align: center;
 	p {
 		font-size: rem-calc(18);
@@ -35,7 +36,7 @@
 	}
 }
 
-.entry-meta {
+.entry__meta {
 	font-size: rem-calc(11);
 	color: $dark-gray;
 }
