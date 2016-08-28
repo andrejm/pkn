@@ -1,5 +1,6 @@
 .home-slider {
 	@include flex-grid-column(12);
+	position: relative;
 	
 	&__item {
 		margin-right: $common-spacing;
@@ -13,6 +14,38 @@
 	}
 
 	&__img {
-		max-width: 300px;
+		max-width: 290px;
+		@include breakpoint(large) {
+			max-width: 340px;
+		}
 	}
+
+	&__prev,
+	&__next {
+		position: absolute;
+		display: block;
+		top: 50%;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		border: none;
+		outline: none;
+		z-index: 1;
+		&.slick-disabled {
+		    opacity: $slick-opacity-not-active;
+		}
+	}
+
+	&__next {
+		right: 0;
+	}
+}
+
+//TODO move it elsewhere, because BEM
+.slider-button {
+	border: 1px solid $white;
+	background-color: $white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
 }
