@@ -1,0 +1,15 @@
+.pecha-call-section {
+	padding: 3*$common-spacing 0 0;
+	@include flex-grid-row();
+	@include flex-align(center);
+	
+	flex-basis: 100%;
+
+	&__claim {
+		font-size: rem-calc(30);
+		line-height: 1.2;
+		text-align: center;
+
+		@include flex-grid-column($pkn-post-width);
+	}
+}

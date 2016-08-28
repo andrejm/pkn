@@ -10,6 +10,11 @@
 		right: 50px;
 		flex-basis: none;
 		flex-flow: column nowrap;
+
+		&--left {
+			right: auto;
+			left: 50px;
+		}
 	}
 
 	&__item {

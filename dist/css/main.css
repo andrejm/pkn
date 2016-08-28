@@ -2791,6 +2791,10 @@ b {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
   }
+  .branding-menu--left {
+    right: auto;
+    left: 50px;
+  }
 }
 
 .branding-menu__item {
@@ -3571,6 +3575,39 @@ a.item-person:hover .item-person__img {
   fill: #fefefe;
   height: 1.875rem;
   width: 10.625rem;
+}
+
+.pecha-call-section {
+  padding: 5.625rem 0 0;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.pecha-call-section__claim {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  text-align: center;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 50%;
+}
+
+@media screen and (min-width: 40em) {
+  .pecha-call-section__claim {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .pkn-layout {
