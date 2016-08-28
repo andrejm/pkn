@@ -13,10 +13,13 @@
 
 	&__main {
 		@include flex-grid-column(8);
-		// @include flex-grid-column-end;
 
 		.news-archive--home & {
-			@include flex-grid-column($pkn-post-width);
+			@include flex-grid-column(12);
+
+			@include breakpoint(large) {
+				@include flex-grid-column($pkn-post-width);
+			}
 		}
 	}
 }

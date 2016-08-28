@@ -1,10 +1,19 @@
 .sharing {
 	@include reset-list();
 	text-align: center;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
 
 	&__item {
 		display: inline-block;
+		font-size: rem-calc(11);
+		margin-right: 5px;
 
+		&:first-child {
+			margin-right: 10px;
+		}
 	}
 
 	&__href {

@@ -1,12 +1,16 @@
 .icon {
 	fill: $black;
 	
-	&--social-facebook {
+	&--social-facebook,
+	&--social-youtube {
 		height: rem-calc(20);
 		width: rem-calc(20);
 	}
 
-	&--social-youtube {
+	&--share-facebook,
+	&--share-twitter,
+	&--share-google,
+	&--share-email {
 		height: rem-calc(20);
 		width: rem-calc(20);
 	}
