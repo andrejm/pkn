@@ -2807,6 +2807,58 @@ b {
   padding: 0 0.625rem;
 }
 
+.contact-people {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 3.75rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.contact-people__inner {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
+  padding-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 40em) {
+  .contact-people__inner {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .contact-people__inner {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 64em) and (min-width: 40em) {
+  .contact-people__inner {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.contact-people--main .contact-people__inner {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .detail-nav {
   max-width: 80rem;
   margin-left: auto;
@@ -3102,6 +3154,10 @@ b {
   text-align: center;
 }
 
+.item-person__img {
+  max-width: 140px;
+}
+
 .item-person .item-person__img {
   transition: box-shadow 0.2s;
   border: 1px solid #fefefe;
@@ -3119,6 +3175,13 @@ a.item-person:hover .item-person__img {
   font-size: 1.125rem;
 }
 
+.item-person--contact .item-person__title {
+  margin-top: 1.875rem;
+  margin-bottom: 0.3125rem;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+}
+
 .item-person__name {
   font-size: 0.8125rem;
   line-height: 1.2;
@@ -3129,6 +3192,15 @@ a.item-person:hover .item-person__img {
 .item-person__meta {
   font-size: 0.6875rem;
   color: #888;
+}
+
+.item-person--contact .item-person__meta {
+  font-size: rme-calc(11);
+}
+
+.item-person__contact {
+  font-size: 0.8125rem;
+  line-height: 1.2;
 }
 
 .items-grid__item .item-volume__img {
@@ -3212,6 +3284,29 @@ a.item-person:hover .item-person__img {
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
     max-width: 25%;
+  }
+}
+
+.items-grid--contact {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.items-grid--contact > .items-grid__item {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media screen and (min-width: 64em) {
+  .items-grid--contact {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .items-grid--contact > .items-grid__item {
+    -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+    max-width: 33.33333%;
   }
 }
 
@@ -3492,6 +3587,18 @@ a.item-person:hover .item-person__img {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .site {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .social {

@@ -1,5 +1,5 @@
 .detail-nav {
-	@include grid-column-row();
+	@include grid-column-row(); //TODO doesn't use flex
 
 	&:after {
 		display: none;

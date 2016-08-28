@@ -1,3 +1,5 @@
 .site {
 	@include flex-grid-row();
+	@include flex-grid-column(12);
+	// @include flex-align(center); //added because of contact
 }

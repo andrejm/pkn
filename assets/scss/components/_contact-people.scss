@@ -1,0 +1,22 @@
+.contact-people {
+	@include flex-grid-row();
+	@include flex-align(center);
+
+	margin-bottom: 2*$common-spacing;
+
+	flex-basis: 100%;
+
+	&__inner {
+		@include flex-grid-column(12);
+		padding-bottom: $common-spacing;
+
+		@include breakpoint(large) {
+			@include flex-grid-column(6);
+		}
+
+		.contact-people--main & {
+			border-bottom: 1px solid $pkn-border-color; 
+		}
+	}
+	
+}
