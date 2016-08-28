@@ -3376,6 +3376,54 @@ a.item-person:hover .item-person__img {
   padding: 0 20px 10px;
 }
 
+.logo-grid {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+}
+
+.logo-grid > .logo-grid__item {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media screen and (min-width: 40em) {
+  .logo-grid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo-grid > .logo-grid__item {
+    -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .logo-grid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo-grid > .logo-grid__item {
+    -ms-flex: 0 0 14.28571%;
+        flex: 0 0 14.28571%;
+    max-width: 14.28571%;
+  }
+}
+
+.logo-grid__logo {
+  max-width: 100%;
+  height: auto;
+}
+
 .menu {
   margin: 0;
   padding: 0;
@@ -3504,6 +3552,10 @@ a.item-person:hover .item-person__img {
 
 .other-speakers__item {
   max-width: 200px;
+}
+
+.partners {
+  text-align: center;
 }
 
 .pecha-branding {
