@@ -3035,20 +3035,18 @@ b {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  float: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0px;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  display: -ms-flexbox;
+  min-width: initial;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-}
-
-.footer__inner:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @media screen and (min-width: 40em) {
@@ -3058,15 +3056,9 @@ b {
   }
 }
 
-.footer__inner:last-child:not(:first-child) {
-  float: right;
-}
-
-.footer__inner, .footer__inner:last-child {
-  float: none;
-}
-
 .footer p {
+  font-size: 0.8125rem;
+  line-height: 1.2;
   margin-bottom: 0;
   height: 3.125rem;
   line-height: 3.125rem;
@@ -3114,11 +3106,15 @@ b {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  float: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0px;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  display: -ms-flexbox;
+  min-width: initial;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
@@ -3126,25 +3122,11 @@ b {
       justify-content: space-between;
 }
 
-.header__inner:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 @media screen and (min-width: 40em) {
   .header__inner {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-}
-
-.header__inner:last-child:not(:first-child) {
-  float: right;
-}
-
-.header__inner, .header__inner:last-child {
-  float: none;
 }
 
 .home-slider {
@@ -3675,10 +3657,20 @@ a.item-person:hover .item-person__img {
 
 .search-form__query {
   max-width: 8.75rem;
-  height: 3.125rem;
   border: 0;
   box-shadow: none;
-  border-bottom: 2px solid #0a0a0a;
+  border-bottom: 1px solid #0a0a0a;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+}
+
+.search-form__query:focus {
+  border: none;
+  border-bottom: 1px solid #0a0a0a;
+  box-shadow: none;
+  transition: none;
 }
 
 .sharing {
@@ -3747,6 +3739,10 @@ a.item-person:hover .item-person__img {
   height: 3.125rem;
   font-size: 0.8125rem;
   padding: 0 0.625rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .social__item:first-child .social__href {

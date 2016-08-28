@@ -11,6 +11,8 @@
 		height: $menubar-height;
 		font-size: $menubar-font-size;
 		padding: 0 rem-calc(10);
+		display: flex;
+		align-items: center;		
 
 		.social__item:first-child & {
 			padding-left: 0;

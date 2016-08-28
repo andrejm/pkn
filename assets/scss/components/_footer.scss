@@ -3,12 +3,15 @@
 	margin-top: 75px;
 
 	&__inner {
-		@include grid-column-row();
+		@include flex-grid-row();
+		@include flex-grid-column();
+		
 		display: flex;
 		justify-content: space-between;
 	}
 
 	p {
+		@include pkn-base();
 		margin-bottom: 0;
 		height: $menubar-height;
 		line-height: $menubar-height;

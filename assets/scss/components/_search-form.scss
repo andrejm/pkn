@@ -3,9 +3,19 @@
 	
 	&__query {
 		max-width: rem-calc(140);
-		height: $menubar-height;
 		border: 0;
 		box-shadow: none;
-		border-bottom: 2px solid $black;
+		border-bottom: 1px solid $black;
+		padding-bottom: 0;
+		margin-bottom: 0;
+
+		@include pkn-base();
+
+		&:focus {
+			border: none;
+			border-bottom: 1px solid $black;
+			box-shadow: none;
+			transition: none;
+		}
 	}
 }
